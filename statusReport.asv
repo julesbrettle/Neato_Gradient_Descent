@@ -1,0 +1,12 @@
+function statusReport(s)
+    global lambda stepNum grad r_current theta exp_current_r position
+    fprintf('stepNum: %3.0f    lambda: %4.5f    grad: [%4.5f; %4.5f] \n            r_current: [%4.2f, %4.2f] theta: %4.5fpi  \n             position: [%4.2f, %4.2f,        %2.5fpi]     -- %s \n', ...
+        stepNum,lambda,grad(1),grad(2),r_current(1),r_current(2),theta/pi(), position(1),position(2),position(3)/pi(), s)
+    fprintf('rostime: %5.0f    ', rostime('now'))
+    fprintf('stepNum: %3.0f    ', stepNum)
+    fprintf('lambda: %4.5f     ', lambda)
+    fprintf('grad: [%4.5f; %4.5f]     ', grad(1),grad(2))
+    fprintf('r_current: [%4.2f, %4.2f] theta: %4.5fpi  \n'
+    
+    
+end
